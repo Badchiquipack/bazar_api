@@ -7,7 +7,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BazarApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BazarApplication.class, args);
-	}
-
+		SpringApplication.run(BazarApplication.class, args);}
 }
