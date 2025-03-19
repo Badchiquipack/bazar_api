@@ -4,9 +4,14 @@
 
 
 <h2>✨ Características Principales</h2>
-<h3>✅ CRUD completo para productos, ventas y clientes.</h3>
+<h3>✅ CRUD completo para productos.</h3>
 <h3>✅ CRUD completo para ventas.</h3>
 <h3>✅ CRUD completo para clientes.</h3>
+<h3>✅ Obtener los productos que tengan existencias menores a una cantidad proporcionada.</h3>
+<h3>✅ Obtener la lista de productos de una determinada venta.</h3>
+<h3>✅ Obtener la sumatoria del monto y también cantidad total de ventas de un determinado
+día.</h3>
+<h3>✅ Obtener información de la venta con el monto más alto.</h3>
 <h3>✅ Validación de datos con Spring Validation.</h3>
 <h3>✅ Persistencia de datos con JPA e Hibernate.</h3>
 <h3>✅ Configuración con Maven.</h3>
