@@ -42,7 +42,7 @@
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/Badchiquipack/bazar_api.git
 
 2. Configurar la base de datos en application.properties:
    ```bash
