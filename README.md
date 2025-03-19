@@ -1,6 +1,6 @@
 <h1 align="center">📦Bazar API RESTful con Spring Boot, Hibernate y MySQL</h1>
-<h2>📖Descripción del proyecto:</h3>
-<h3>Este proyecto consiste en una API Restful que maneja diferentes operaciones de un bazar, contemplando sus clientes, ventas y productos</h2>
+<h2>📖Descripción del proyecto:</h2>
+<h3>Este proyecto consiste en una API Restful que maneja diferentes operaciones de un bazar, contemplando sus clientes, ventas y productos</h3>
 
 
 <h2>✨ Características Principales</h2>
@@ -11,11 +11,127 @@
 <h3>✅ Persistencia de datos con JPA e Hibernate.</h3>
 <h3>✅ Configuración con Maven.</h3>
 
-
 <h2>📌 Endpoints de la API</h2>
 <h3>📍 Clientes</h3>
+<table>
+  <tr>
+    <th>Método</th>
+    <th>Endpoint</th>
+    <th>Descripción</th>
+  </tr>
+   <tr>
+    <td>POST</td>
+    <td>/cliente/crear</td>
+    <td>Registrar un nuevo cliente</td>
+  </tr>
+   <tr>
+    <td>GET</td>
+    <td>/cliente/mostrar</td>
+    <td>Obtener todos los clientes existentes</td>
+  </tr>
+   <tr>
+    <td>GET</td>
+    <td>/cliente/mostrar/{id}</td>
+    <td>Obener un cliente por su id</td>
+  </tr>
+   <tr>
+    <td>PUT</td>
+    <td>/cliente/editar/{id}</td>
+    <td>Modificar un cliente existente por su id</td>
+  </tr>
+   <tr>
+    <td>DELETE</td>
+    <td>/cliente/eliminar/{id}</td>
+    <td>Eliminar un cliente por su id</td>
+  </tr>
+</table>
+
 <h3>📍 Productos</h3>
+<table>
+  <tr>
+    <th>Método</th>
+    <th>Endpoint</th>
+    <th>Descripción</th>
+  </tr>
+   <tr>
+    <td>POST</td>
+    <td>/producto/agregar</td>
+    <td>Registrar un nuevo producto</td>
+  </tr>
+   <tr>
+    <td>GET</td>
+    <td>/producto/listar</td>
+    <td>Obtener todos los productos existentes</td>
+  </tr>
+   <tr>
+    <td>GET</td>
+    <td>/producto/listar/{id}</td>
+    <td>Obener un producto por su id</td>
+  </tr>
+   <tr>
+    <td>PUT</td>
+    <td>/producto/editar/{id}</td>
+    <td>Modificar un producto existente por su id</td>
+  </tr>
+   <tr>
+    <td>DELETE</td>
+    <td>/producto/eliminar/{id}</td>
+    <td>Eliminar un producto por su id</td>
+  </tr>
+   <tr>
+    <td>GET</td>
+    <td>/producto/existencias/{cantidad}</td>
+    <td>Obtener productos con existencias menores a cantidad</td>
+  </tr>
+</table>
 <h3>📍 Ventas</h3>
+<table>
+  <tr>
+    <th>Método</th>
+    <th>Endpoint</th>
+    <th>Descripción</th>
+  </tr>
+   <tr>
+    <td>POST</td>
+    <td>/venta/crear</td>
+    <td>Registrar una nueva venta</td>
+  </tr>
+   <tr>
+    <td>GET</td>
+    <td>/venta/mostrar</td>
+    <td>Obtener todas las ventas existentes</td>
+  </tr>
+   <tr>
+    <td>GET</td>
+    <td>/venta/mostrar/{id}</td>
+    <td>Obener una venta por su id</td>
+  </tr>
+   <tr>
+    <td>PUT</td>
+    <td>/venta/editar/{id}</td>
+    <td>Modificar una venta existente por su id</td>
+  </tr>
+   <tr>
+    <td>DELETE</td>
+    <td>/venta/eliminar/{id}</td>
+    <td>Eliminar una venta por su id</td>
+  </tr>
+   <tr>
+    <td>GET</td>
+    <td>/venta/productos/{id}</td>
+    <td>Obtener los productos de una venta</td>
+  </tr>
+   <tr>
+    <td>GET</td>
+    <td>/venta/venta_mayor</td>
+    <td>Obtener información sobre la venta con el monto mayor</td>
+  </tr>
+   <tr>
+    <td>GET</td>
+    <td>/venta/total/{fecha}</td>
+    <td>Obtener información de las ventas de un día</td>
+  </tr>
+</table>
 
 <h2>✔🛠️Tecnologías utilizadas</h2>
 <h3>- Java SE 17</h3>
@@ -25,7 +141,6 @@
 <h3>- Spring Validation</h3>
 <h3>- Maven</h3>
 <h3>- IDE IntelliJ Idea</h3>
-
 
 <h2>📌 Requisitos Previos</h2>
 <h3>Antes de ejecutar el proyecto, asegúrate de tener instalado:</h3>
@@ -50,7 +165,7 @@
     spring.datasource.url=tu_basededatos
     spring.datasource.username=tu_usuario
     spring.datasource.password=tu_password
-   
+
 3. Puedes reemplazar `tu_usuario`, `tu_password` y `tu_basededatos` con los valores correspondientes. 🚀
 
 <h2>📩 Contacto</h2>
