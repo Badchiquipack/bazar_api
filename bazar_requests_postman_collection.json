@@ -1,0 +1,452 @@
+{
+	"info": {
+		"_postman_id": "9d774627-5a28-4de9-a05c-3635349ff905",
+		"name": "Bazar requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41313121"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Crear cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Alma\",\r\n    \"apellido\":\"Suarez\",\r\n    \"dni\":\"123458\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/cliente/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cliente",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/cliente/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cliente",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar cliente por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/cliente/mostrar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cliente",
+								"mostrar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar cliente por id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apellido\":\"Suárez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/cliente/editar/102",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cliente",
+								"editar",
+								"102"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar cliente por id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/cliente/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cliente",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Producto",
+			"item": [
+				{
+					"name": "Agregar producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreProducto\":\"Mirinda\",\r\n    \"marca\":\"Pepsi\",\r\n    \"costo\":15.50,\r\n    \"stock\":10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/producto/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"producto",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/producto/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"producto",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar producto por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/producto/listar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"producto",
+								"listar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar producto por id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"costo\": 16,\r\n    \"stock\":15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/producto/editar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"producto",
+								"editar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar producto por id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/producto/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"producto",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener segun existencias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/producto/existencias/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"producto",
+								"existencias",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Venta",
+			"item": [
+				{
+					"name": "Crear venta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"detalles\":[\r\n        {\"productoId\":1,\r\n        \"cantidad\":10\r\n        }\r\n    ],\r\n    \"clienteId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/venta/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"venta",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar ventas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/venta/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"venta",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar venta por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/venta/mostrar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"venta",
+								"mostrar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar venta por id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"detalles\":[\r\n        {\"productoId\":1,\r\n        \"cantidad\":10\r\n        }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/venta/editar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"venta",
+								"editar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar por id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/venta/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"venta",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar productos de una venta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/venta/productos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"venta",
+								"productos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar totales por fecha",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/venta/total/2025-03-05",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"venta",
+								"total",
+								"2025-03-05"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar venta mayor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/venta/venta_mayor",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"venta",
+								"venta_mayor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

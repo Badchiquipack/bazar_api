@@ -133,6 +133,9 @@
   </tr>
 </table>
 
+<h4>Podrás encontrar la colección de requests en el archivo bazar_requests_postman_collection.json,
+solo es necesario importarlo en postman</h4>
+
 <h2>✔🛠️Tecnologías utilizadas</h2>
 <h3>- Java SE 17</h3>
 <h3>- Spring Boot 3</h3>
